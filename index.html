@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zara Therapy Clinic- We care for you</title>
+    <link rel="shortcut icon" href="imges/abc-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/index.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="shortcut icon" href="assets/imges/abc-removebg-preview.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+
+
+<style>
+  .dropdown-menu {
+      border: 1px solid #ccc;
+      background: #fff;
+      max-height: 300px;
+      overflow-y: auto;
+      display: none;
+      position: absolute;
+      width: 100%;
+      z-index: 1000;
+    }
+    .dropdown-menu.show {
+      display: block;
+    }
+    .dropdown-item {
+      padding: 8px 12px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+    .dropdown-item:hover {
+      background-color: #f1f1f1;
+    }
+    .text-muted {
+      color: #999;
+      padding: 8px 12px;
+      display: block;
+    }
+    .search-box {
+      position: relative;
+      width: 300px;
+      margin: 50px auto;
+    }
+</style>
+
+
+</head>
+<body onload="getlocation()">
+
+  
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/imges/abc-removebg-preview.png" alt="BMW">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-4" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link abc" href="Doctors.html">Our Team</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link abc" href="Gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link abc" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link abc" href="Aboutus.html">About Us</a>
+                    </li>
+                  
+                    </ul>
+                <a class="btn btn-signup" href="signuppage.html" role="button">Sign Up</a>
+            </div>
+        </div>
+      </nav>
+    
+   <!-- Hero Section -->
+    <div class="banner">
+   <header class="hero text-center">
+    <div class="container ">
+        <h5 class="text-uppercase ">Welcome To Zara Therapy</h5>
+        <h1 class="display-3 fw-bold">Find Nearest <br> Doctor.</h1>
+        <p class="lead fw-bold">Search our doctors.</p>
+   
+        <div class="search-box" style="width: 40%; background-color: #ffffff; opacity: 0.9;">
+          <input type="text" id="globalSearch" class="form-control mb-2" placeholder="Search doctors, clinics, hospitals, etc.">
+          <div id="searchResults" class="dropdown-menu" style="width: 90%;"></div>
+          <div class="input-group">
+            <a href="#" class="btn-appoitment">Book an Appointment</a>
+          </div>
+        </div>
+        
+        
+      </div>
+</header>
+</div>
+
+<!-- services -->
+<section class="services">
+  <div class="container">
+    <div class="cards-grid">
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon pink">
+          <img src="assets/imges/message1.png" class="card-img-top" alt="Massage Therapy">
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Massage Therapy</h3>
+          <p class="service-text">Get relief from stress and tension with our professional massage therapy sessions.</p>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon blue">
+          <img src="assets/imges/Physical Rehabilitation.png" class="card-img-top" alt="Physical Rehabilitation">
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Physical Rehabilitation</h3>
+          <p class="service-text">Regain mobility and strength with our personalized physical rehabilitation programs.</p>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon blue">
+          <img src="assets/imges/Acupuncture.png" class="card-img-top" alt="Acupuncture">
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Acupuncture (Chinese type)</h3>
+          <p class="service-text">Experience holistic healing with our traditional acupuncture treatments.</p>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up">
+        <div class="service-icon green">
+          <img src="assets/imges/Aromatherapy.png" class="card-img-top" alt="Aromatherapy">
+        </div>
+        <div class="service-body">
+          <h3 class="service-title">Aromatherapy</h3>
+          <p class="service-text">Indulge your senses, relax your mind, and relieve headaches with our soothing aromatherapy sessions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end -->
+
+<hr>
+
+<!-- About us-->
+<!-- About 1 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5">
+  <div class="container">
+    <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+      <div class="col-12 col-lg-6 col-xl-5 d-none d-md-block" data-aos="fade-right">
+        <img class="img-fluid rounded" loading="lazy" src="assets/imges/doctor5-removebg-preview.png " alt="About 1">
+      </div>
+      <div class="col-12 col-lg-6 col-xl-7" data-aos="fade-left">
+        <div class="row justify-content-xl-center">
+          <div class="col-12 col-xl-11">
+            <h2 class="mb-3 text-primary">Who Are We?</h2>
+            <p class="lead fs-4 text-secondary mb-3">Zara Therapy Clinic specializes in healing, recovery, and holistic well-being.</p>
+            <p class="mb-5">Zara Therapy Clinic offers compassionate care, advanced therapies, and personalized treatments, supporting physical rehabilitation and mental wellness for a better quality of life.</p>
+            <div class="row gy-4 gy-md-0 gx-xxl-5X">
+              <div class="col-12 col-md-6">
+                <div class="d-flex">
+                  <div class="me-4 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="h4 mb-3">Healing </h2>
+                    <p class="text-secondary mb-0">At Zara Therapy Clinic, we provide expert healing and care.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex">
+                  <div class="me-4 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                      <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="h4 mb-3">Wellness</h2>
+                    <p class="text-secondary mb-0">At Zara Therapy Clinic, we prioritize wellness, recovery, and support.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end -->
+
+<!-- a small container with appointment  -->
+
+<div class="container-fluid xyz mt-5" style="background-color: #333;">
+
+  <div class="row x text-center">
+    
+    <div class="col text-center m-3">
+       <p>Whether your condition stems from sports, work, or any other cause, <br> we’re here to provide expert care and support—because your well-being matters to us</p>
+    </div>
+  </div>
+  <div class="row x text-center">
+    <div class="col text-center">
+<a href="Appointment.html"><button type="button" class="btn btn-outline-secondary xyzbutton">Book an Appointment</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- its End -->
+
+
+
+<section class="team">
+  <div class="container">
+    <div class="row justify-content-md-center ">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="mb-4 mt-4 display-4 text-center text-primary fw-bolder">Specialists</h2>
+        <p class="text-secondary mb-5 text-center lead fs-4">Expert Hands, Caring Hearts—Meet Our Specialist Doctors Who Put Your Health First!</p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+    <div class="row" id="dataaaa">
+    
+    </div>
+    </div>
+  </section>
+
+<hr>
+
+<!-- client Feedback -->
+
+<div class="container mt-5 mb-4">
+  <section>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10 col-xl-8 text-center">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="mb-4 display-4 text-center text-primary fw-bolder">Testimonials</h2>
+          <hr class="w-50 mx-auto mb-3 mb-xl-9 border-dark-subtle">
+        </div>
+      <p class="mb-4  mb-md-5 pb-md-0 text-secondary text-center lead fs-4">
+        Hear from our satisfied patients – real stories of healing, recovery, and care at Zara Therapy Clinic!
+      </p>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <div class="col-md-3 mb-5 mb-md-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="assets/imges/hasantestimonial.jpeg"
+          style="border-radius: 50%;" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">Hasan Islam</h5>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Life-changing therapy! I feel stronger and happier.<i class="fas fa-quote-right pe-2"></i>
+      </p>
+    </div>
+    <div class="col-md-3 mb-5 mb-md-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="assets/imges/ashal.enc"
+          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">Ashal Rizvi</h5>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Finally pain-free! Amazing physiotherapy sessions..<i class="fas fa-quote-right pe-2"></i>
+      </p>
+
+    </div>
+    <div class="col-md-3 mb-0">
+      <div class="d-flex justify-content-center mb-4">
+        <img src="assets/imges/fasihra.jpg"
+          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">Fasih Raza</h5>
+      <p class="px-xl-3">
+        <i class="fas fa-quote-left pe-2"></i>Supportive team, helped me manage stress effectively!<i class="fas fa-quote-right pe-2"></i>
+      </p>
+
+    </div>
+    <div class="col-md-3 mb-0" style="background-color: rgb(248, 249, 250);">
+      <div class="d-flex justify-content-center mb-4" style="background-color: rgb(248, 249, 250);">
+      <a href="feedback.html">  <img src="assets/imges/plus.png"
+          class="rounded-circle shadow-1-strong" width="150" height="150" />
+      </div>
+      <h5 class="mb-3">Add one</h5></a>
+     
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+ <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #333"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Zara Therapy Clinic
+            </h6>
+            <p>
+              With a team of skilled professionals, we offer a wide range of therapeutic treatments designed to help individuals achieve a healthier and more balanced life.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a href="Doctors.html" class="text-white">Specialist</a>
+            </p>
+            <p>
+              <a href="Services.html" class="text-white">We Provide</a>
+            </p>
+            <p>
+              <a href="contactus.html" class="text-white">Contact us</a>
+            </p>
+            <p>
+              <a href="Appointment.html" class="text-white">Specialist</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> 156 Shahra-e-Faisal, Faisal Cantonment, Karachi</p>
+            <p><i class="fas fa-envelope mr-3"></i><a href="mailto:fasihaptech@gmail.com" class="text-decoration-none text-white"> fasihaptech@gmail.com</a></p>
+            <p><i class="fas fa-phone mr-3"></i><a href="tel:+923302467288" class="text-decoration-none text-white">  +92 330 2467288</a></p>
+            <p><i class="fas fa-print mr-3"></i> <a href="tel:+923363206011" class="text-decoration-none text-white">  +92 336 3206011</a></p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1 rounded-circle"
+               style="background-color: #3b5998"
+               href="https://www.facebook.com/dangerx.fasih"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1 rounded-circle"
+               style="background-color: #55acee"
+               href="#!"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1 rounded-circle"
+               style="background-color: #dd4b39"
+               href="mailto: syedfasihraza27@gmail.com"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1 rounded-circle"
+               style="background-color: #ac2bac"
+               href="https://www.instagram.com/fasihraza27/"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1 rounded-circle"
+               style="background-color: #0082ca"
+               href="https://www.linkedin.com/in/fasih-raza-4a261a355/"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1 rounded-circle"
+               style="background-color: #333333"
+               href="#!"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2025 Copyright:
+      <a class="text-white" href="!#"
+         >Fasih Raza</a
+        >
+    </div>
+  </footer>
+  <!-- Footer -->
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<!-- doctors on index  -->
+
+<script>
+  let yummm = [
+      {
+          "title": "Dr. Zoha",
+          "image": "assets/imges/doc-1.jpg",
+          "des": "Physiatrist",
+          "link": "doc-1.html"
+      },
+      {
+          "title": "Dr. Yadullah",
+          "image": "assets/imges/doc-6.jpg",
+          "des": "Physiotherapist",
+          "link": "doc-6.html"
+      },
+      {
+          "title": "Dr. Kehan",
+          "image": "assets/imges/doc-11.jpeg",
+          "des": "Rehabilitation Specialist",
+          "link": "doc-11.html"
+      },
+      {
+          "title": "Dr. Asad",
+          "image": "assets/imges/doc-12.jpeg",
+          "des": "Rehabilitation Specialist",
+          "link": "doc-12.html"
+      }
+  ];
+
+  let dataaaa = document.getElementById("dataaaa");
+
+ for (let b = 0; b < yummm.length; b++) {
+      dataaaa.innerHTML += `
+     <div class="col-12 col-sm-6 col-lg-3 d-flex mb-5">
+          <a href="${yummm[b].link}" class="card-link text-decoration-none w-100">
+            <div class="card doctor-card  border-0 border-bottom border-primary shadow-sm overflow-hidden ">
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img style="height: 270px;" class="img-fluid" loading="lazy" src="${yummm[b].image}" alt="${yummm[b].title}" width="100%" >
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">${yummm[b].title}</h4>
+                    <p class="text-secondary mb-0">${yummm[b].des}</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </a>
+        </div>
+      `;
+    }
+</script>
+
+
+
+
+
+
+<script>
+  let doc = [
+    {
+      "title": "Dr. Zoha",
+      "image": "assets/imges/doc-1.jpg",
+      "des": "Physiatrist",
+      "link": "doc-1.html"
+    },
+    {
+      "title": "Dr. Koshar",
+      "image": "assets/imges/doc-2.jpg",
+      "des": "Physiatrist",
+      "link": "doc-2.html"
+    },
+    {
+      "title": "Dr. Mustafa",
+      "image": "assets/imges/doc-3.jpg",
+      "des": "Physiatrist",
+      "link": "doc-3.html"
+    },
+    {
+      "title": "Dr. Hasan",
+      "image": "assets/imges/doc-4.jpg",
+      "des": "Physiatrist",
+      "link": "doc-4.html"
+    },
+    {
+      "title": "Dr. Awais",
+      "image": "assets/imges/doc-5.jpg",
+      "des": "Physiotherapist",
+      "link": "doc-5.html"
+    },
+    {
+      "title": "Dr. Yadullah",
+      "image": "assets/imges/doc-6.jpg",
+      "des": "Physiotherapist",
+      "link": "doc-6.html"
+    },
+    {
+      "title": "Dr. Faryal",
+      "image": "assets/imges/doc-7.avif",
+      "des": "Physiotherapist",
+      "link": "doc-7.html"
+    },
+    {
+      "title": "Dr. Ashal",
+      "image": "assets/imges/doc-8.avif",
+      "des": "Physiotherapist",
+      "link": "doc-8.html"
+    },
+    {
+      "title": "Dr. Jun",
+      "image": "assets/imges/doc-9.avif",
+      "des": "Rehabilitation specialist",
+      "link": "doc-9.html"
+    },
+    {
+      "title": "Dr. Mubashir",
+      "image": "assets/imges/doc-10.avif",
+      "des": "Rehabilitation specialist",
+      "link": "doc-10.html"
+    },
+    {
+      "title": "Dr. Kehan",
+      "image": "assets/imges/doc-11.jpeg",
+      "des": "Rehabilitation specialist",
+      "link": "doc-11.html"
+    },
+    {
+      "title": "Dr. Asad",
+      "image": "assets/imges/doc-12.jpeg",
+      "des": "Rehabilitation specialist",
+      "link": "doc-12.html"
+    }
+  ];
+</script>
+
+<script>
+  $(document).ready(function() {
+    let searchInput = $('#globalSearch');
+    let resultsDropdown = $('#searchResults');
+
+    // Listen for keyup event in search input
+    searchInput.on('keyup', function() {
+      let query = $(this).val().toLowerCase().trim();
+      resultsDropdown.empty(); // clear previous results
+
+      // Only search if query length is more than 1 character
+      if (query.length > 1) {
+        let filteredResults = doc.filter(item => {
+          // Check if the title or description contains the search query
+          return item.title.toLowerCase().includes(query) ||
+                 item.des.toLowerCase().includes(query);
+        });
+
+        if (filteredResults.length > 0) {
+          resultsDropdown.addClass('show').show();
+          filteredResults.forEach(item => {
+            resultsDropdown.append(`
+              <a href="${item.link}" class="dropdown-item suggestion-item">
+                <strong>${item.title}</strong> - ${item.des}
+              </a>
+            `);
+          });
+        } else {
+          resultsDropdown.addClass('show').show();
+          resultsDropdown.append('<span class="dropdown-item text-muted">No results found</span>');
+        }
+      } else {
+        resultsDropdown.removeClass('show').hide();
+      }
+    });
+
+    // Hide dropdown when clicking outside the search box
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.search-box').length) {
+        resultsDropdown.removeClass('show').hide();
+      }
+    });
+  });
+</script>
+
+</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

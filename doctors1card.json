@@ -1,0 +1,76 @@
+ let yum = [
+      {
+        "title": "Dr. Zoha",
+        "image": "assets/imges/doc-1.jpg",
+        "des": "Physiatrist",
+        "link": "doc-1.html"
+      },
+      {
+        "title": "Dr. Koshar",
+        "image": "assets/imges/doc-2.jpg",
+        "des": "Physiatrist",
+        "link": "doc-2.html"
+      },
+      {
+        "title": "Dr. Mustafa",
+        "image": "assets/imges/doc-3.jpg",
+        "des": "Physiatrist",
+        "link": "doc-3.html"
+      },
+      {
+        "title": "Dr. Hasan",
+        "image": "assets/imges/doc-4.jpg",
+        "des": "Physiatrist",
+        "link": "doc-4.html"
+      },
+      {
+        "title": "Dr. Awais",
+        "image": "assets/imges/doc-5.jpg",
+        "des": "Physiotherapist",
+        "link": "doc-5.html"
+      },
+      {
+        "title": "Dr. Yadullah",
+        "image": "assets/imges/doc-6.jpg",
+        "des": "Physiotherapist",
+        "link": "doc-6.html"
+      },
+      {
+        "title": "Dr. Faryal",
+        "image": "assets/imges/doc-7.avif",
+        "des": "Physiotherapist",
+        "link": "doc-7.html"
+      },
+      {
+        "title": "Dr. Ashal",
+        "image": "assets/imges/doc-8.avif",
+        "des": "Physiotherapist",
+        "link": "doc-8.html"
+      },
+      {
+        "title": "Dr. Jun",
+        "image": "assets/imges/doc-9.avif",
+        "des": "Rehabilitation specialist",
+        "link": "doc-9.html"
+      },
+      {
+        "title": "Dr. Mubashir",
+        "image": "assets/imges/doc-10.avif",
+        "des": "Rehabilitation specialist",
+        "link": "doc-10.html"
+      },
+      {
+        "title": "Dr. Kehan",
+        "image": "assets/imges/doc-11.jpeg",
+        "des": "Rehabilitation specialist",
+        "link": "doc-11.html"
+      },
+      {
+        "title": "Dr. Asad",
+        "image": "assets/imges/doc-12.jpeg",
+        "des": "Rehabilitation specialist",
+        "link": "doc-12.html"
+      }
+    ]
+  
+  

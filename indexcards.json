@@ -1,0 +1,28 @@
+let products =[
+
+    {
+        "image":"assets/imges/attar-8.jpg",
+        "title":"Lavendor oil",
+        "price":"Rs 1,550",
+        "des":"Lavender essential oil contains many ketones. These compounds act on the circulatory system, causing the body to gradually warm up. Lavender essential oil should be used by massaging and mixed in a preparation diluted to 5%",
+    },
+    {
+        "image":"assets/imges/attar-9.jpg",
+        "title":"Lemongrass oil",
+        "price":"Rs 1,550",
+        "des":" Lemongrass oil contains many ketones. These compounds act on the circulatory system, causing the body to gradually warm up. Lavender essential oil should be used by massaging and mixed in a preparation diluted to 5%",
+    },
+    
+    {
+        "image":"assets/imges/machine-3.jpg",
+        "title":"Deep Tissue Massage Gun",
+        "price":"Rs 3,500",
+        "des":"The Massage gun comes with a powerful motor with frequency ranging from RPM. Equipped with the QuietWave technology, the massager has an almost noiseless operation with less than 45 dB noise production even while being used at the maximum speed intensity of level 6.",
+    },
+    {
+        "image":"assets/imges/machine-8.jpg",
+        "title":"3 in 1 Rehabilitation Machine",
+        "price":"Rs 18,000",
+        "des":"Musculoskeletal rehabilitation exercises. Strengthen the muscles on the side that are not moving. Exercise the ability to recover nerve reflexes. Practice stretching, stretching and stretching the joints of the arms and legs. Stimulates blood circulation to return to numbed areas.",
+    }   
+    ]

@@ -1,0 +1,74 @@
+let yum = [
+    {
+        "image": "assets/imges/attar-8.jpg",
+        "title": "Attar Al Oud",
+        "price": "Rs 1,550",
+        "des": "A rich and woody oud attar with a luxurious scent."
+    },
+    {
+        "image": "assets/imges/attar-9.jpg",
+        "title": "Musk Al Tahara",
+        "price": "Rs 1,550",
+        "des": "A fresh and clean white musk attar for daily wear."
+    },
+    {
+        "image": "assets/imges/attar-7.jpg",
+        "title": "Amber Rose",
+        "price": "Rs 1,550",
+        "des": "A floral blend of amber and rose for an elegant fragrance."
+    },
+    {
+        "image": "assets/imges/attar-4.jpg",
+        "title": "Sandalwood Essence",
+        "price": "Rs 1,550",
+        "des": "A warm and earthy sandalwood attar for a soothing aroma."
+    },
+    {
+        "image": "assets/imges/attar-5.jpg",
+        "title": "Jasmine Night",
+        "price": "Rs 1,550",
+        "des": "A sweet and floral jasmine attar perfect for special occasions."
+    },
+    {
+        "image": "assets/imges/attar-6.jpg",
+        "title": "Royal Blend",
+        "price": "Rs 1,550",
+        "des": "A unique blend of oud, musk, and amber for a royal touch."
+    },
+    {
+        "image": "assets/imges/machine-1.jpg",
+        "title": "Deep Tissue Massage Gun",
+        "price": "Rs 3,500",
+        "des": "The Massage gun comes with a powerful motor with frequency ranging from RPM. Equipped with the QuietWave technology, the massager has an almost noiseless operation with less than 45 dB noise production even while being used at the maximum speed intensity of level 6."
+    },
+    {
+        "image": "assets/imges/machine-2.jpg",
+        "title": "3 in 1 Rehabilitation Machine",
+        "price": "Rs 18,000",
+        "des": "Musculoskeletal rehabilitation exercises. Strengthen the muscles on the side that are not moving. Exercise the ability to recover nerve reflexes. Practice stretching, stretching and stretching the joints of the arms and legs. Stimulates blood circulation to return to numbed areas."
+    },
+    {
+        "image": "assets/imges/machine-3.jpg",
+        "title": "Electric Acupuncture Pen",
+        "price": "Rs 2,800",
+        "des": "Handheld acupuncture pen with electrical stimulation to help relieve pain and improve blood circulation."
+    },
+    {
+        "image": "assets/imges/machine-4.jpg",
+        "title": "Smart Neck Massager",
+        "price": "Rs 4,500",
+        "des": "Portable smart neck massager with heat and pulse technology for deep relaxation and stress relief."
+    },
+    {
+        "image": "assets/imges/machine-5.jpg",
+        "title": "Therapeutic Foot Spa Machine",
+        "price": "Rs 6,000",
+        "des": "A hydrotherapy foot spa machine with massage rollers and heating function to soothe sore feet."
+    },
+    {
+        "image": "assets/imges/machine-6.jpg",
+        "title": "Brainwave Relaxation Headset",
+        "price": "Rs 12,500",
+        "des": "A wireless brainwave relaxation device that helps improve focus and reduce stress through guided meditation."
+    }
+];
